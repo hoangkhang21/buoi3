@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bài 4</title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<script>
+		function KiemTra()
+		{
+			var tdn = f.TDN.value;
+			var mk = f.MK.value;
+			var nlmk = f.NLMK.value;
+			if(tdn == ""|| mk == ""|| nlmk == "")
+			{
+				alert('Không đủ thông tin đăng nhập');
+				return false;
+			}
+			return true;
+		}
+		</script>
+		<form name="f">
+			<table>
+				<tr>
+				<td> Tên Đăng Nhập:</td>
+				<td><input type="text" name="TDN">(nhiều hơn 6 kí tự)</td>
+				</tr>
+				<tr>
+				<td> Mật Khẩu:</td>
+				<td><input type="password" name="MK"></td>
+				</tr>
+				<tr>
+				<td> Nhập Lại Mật Khẩu:</td>
+				<td><input type="password" name="NLMK"></td>
+				</tr>
+			</table>
+			<button type="submit" onclick="return KiemTra()">Kiểm Tra</button>
+			
+	</body>
+</html>
